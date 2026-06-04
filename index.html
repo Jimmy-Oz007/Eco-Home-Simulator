@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WattWise - Home Electricity Saving Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Browser Game MVP</p>
+        <h1>WattWise</h1>
+        <p class="subtitle">
+          Save money by managing electricity use inside your home.
+        </p>
+      </div>
+
+      <div class="month-card">
+        <span>Month</span>
+        <strong id="month">1</strong>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat">
+        <span>Money</span>
+        <strong id="money">$1200</strong>
+      </article>
+
+      <article class="stat">
+        <span>Electricity Bill</span>
+        <strong id="bill">$0</strong>
+      </article>
+
+      <article class="stat">
+        <span>Comfort</span>
+        <strong id="comfort">70%</strong>
+      </article>
+
+      <article class="stat">
+        <span>Energy Used</span>
+        <strong id="energy">0 kWh</strong>
+      </article>
+    </section>
+
+    <section class="layout">
+      <section class="panel">
+        <div class="panel-title">
+          <h2>Home Appliances</h2>
+          <p>
+            Turn appliances on/off. Higher usage means higher bills.
+          </p>
+        </div>
+
+        <div id="appliance-list" class="cards"></div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-title">
+          <h2>Upgrades</h2>
+          <p>
+            Buy upgrades to reduce future electricity cost.
+          </p>
+        </div>
+
+        <div id="upgrade-list" class="upgrade-list"></div>
+      </aside>
+    </section>
+
+    <section class="panel event-panel">
+      <h2>Game Log</h2>
+      <div id="log" class="log"></div>
+    </section>
+
+    <section class="actions">
+      <button id="next-day">Next Day</button>
+      <button id="next-month" class="secondary">
+        Pay Bill / Next Month
+      </button>
+      <button id="reset" class="danger">
+        Reset Game
+      </button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

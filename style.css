@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.app {
+  width: min(1200px, 94%);
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background: linear-gradient(135deg, #1f2937, #0f766e);
+  padding: 28px;
+  border-radius: 24px;
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #99f6e4;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #d1fae5;
+}
+
+.month-card {
+  min-width: 130px;
+  text-align: center;
+  background: rgba(255,255,255,0.12);
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.month-card strong {
+  font-size: 42px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.stat,
+.panel {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.stat span {
+  color: #9ca3af;
+}
+
+.stat strong {
+  display: block;
+  font-size: 28px;
+  margin-top: 6px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.appliance-card {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.appliance-card.active {
+  border-color: #2dd4bf;
+}
+
+button {
+  border: 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #14b8a6;
+  color: #06201d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #60a5fa;
+}
+
+button.danger {
+  background: #fb7185;
+}
+
+.upgrade-list {
+  display: grid;
+  gap: 12px;
+}
+
+.upgrade {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.log {
+  max-height: 160px;
+  overflow-y: auto;
+  display: grid;
+  gap: 8px;
+}
+
+.log-entry {
+  background: #111827;
+  border-left: 4px solid #14b8a6;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .stats-grid,
+  .layout,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
